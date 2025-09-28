@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+
+*{
+    margin: 0;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--cor_fundo);
+}
+
+:root{
+    --cor_base: rgb(6, 9, 163);
+    --sub-cab: rgb(6, 9, 163);
+    --cor_branca: rgb(255, 255, 255);
+    --cor_preta: rgb(0, 0, 0);
+    --cor_fundo: rgb(255, 255, 255);
+    --cor_fundo_materia: rgb(241, 241, 241);
+    ---main-width: 1400px;
+    ---titulo-h2: 12px;
+    --fonte-p: 15px;
+    ---titulo-temas: 25px;
+    ---fonte: Arial, Helvetica, sans-serif;
+    ---boxS: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    ---cor_fundo_menu: rgb(84, 84, 255);
+
+}
+
+iframe{
+    width: 100%;
+}
+
+[theme="dark"]{
+    --cor_base: rgb(0, 0, 0);
+    --cor_fundo: #333;
+    ---cor_fundo_menu: #1f1f1f;
+    --cor_branca: rgb(0, 0, 0);
+    --cor_preta: rgb(255, 255, 255);
+    --sub-cab: rgb(255, 255, 255);
+    --cor_fundo_materia:  #2b2b2b;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor_base);
+    color: var(--cor_branca);
+    
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(---main-width);
+    margin: 1rem 2rem;
+}
+.resumoMateria{
+    margin-top: 5px;
+    font-size: var(--fonte-p);
+}
+
+.melqui_logo{
+    width: 250px;
+}
+.melqui_logo img{
+    width: 100%;
+}
+.sub_cabecalho{
+    display: flex;
+    align-items: center;
+    gap: 2REM;
+    justify-content: center;
+    border-bottom: 1px solid var(--cor_base);
+    height: 35px;
+}
+
+.redes{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.redes div{
+    width: 60px;
+}
+
+.redeicon{
+    width: 100%;
+}
+
+
+.temas{
+    color: var(--sub-cab);
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.principal{
+    display: flex;
+    justify-content: flex-start;
+    width: var(---main-width);
+    margin: 2rem;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Sora', sans-serif;
+    font-size: 15PX;
+    color: var(--cor_preta)
+}
+
+.icones{
+    width: 35px
+}
+
+.texto{
+    text-indent: 3rem;
+}
+.texto p{
+    margin-bottom: 1rem;
+}
+
+
+a:hover{
+    color: rgb(133, 133, 133);
+    transition: 100ms linear;
+}
+
+footer{
+    position: absolute;
+    background-color: var(--cor_base);
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+}
+
+.assuntos{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.assunto{
+    font-family: var(---fonte)
+}
+li{
+    margin-bottom: 1rem;
+
+    list-style-position: inside;
+
+}
+td{
+    border: 1px solid black;
+    padding: 5px;
+}
+table{
+    border: 1px solid black;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 1rem;
+    width: 90%;
+}
+
+.coluna1{
+    width: 65%;
+    margin: 0px 1rem;
+    border-radius: 15px;
+    color: var(--cor_preta);
+}
+.bloco{
+    box-shadow: var(---boxS);
+    margin-bottom: 1rem;
+}
+.coluna1 h1{
+    margin-left: 5px;
+    color: var(--cor_preta);
+}
+.tituloTemas{
+    font-size: var(---titulo-temas);
+    font-family: var(---fonte);
+    text-align: center;
+}
+
+.coluna2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    gap: 1rem;
+    box-shadow: var(---boxS);
+    border-radius: 15px;
+    color: var(--cor_preta);
+}
+.conteudoColuna2{
+    position: sticky;
+    top: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu{ 
+    flex-direction: column;
+    position: absolute;
+    background-color: var(---cor_fundo_menu);
+    align-items: center;
+    margin-left: -20px;
+    padding: 2rem;
+    top: -300px;
+    gap: 1rem;
+    min-width: 20%;
+    border-radius: 10px;
+    display: flex;
+    transition: 500ms linear;
+    z-index: 2;
+    color: var(--cor_preta); 
+}
+
+.materia{
+    width: 48%;
+    margin: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    color: var(--cor_preta);
+    background-color: var(--cor_fundo_materia);
+}
+
+.materia a{
+    font-size: var(---titulo-h2);
+}
+
+.oi{
+    width: 100%;
+}
+
+.imgdes{
+    font-size: 12px;
+}
+
+.maisLidas{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 2rem;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.materia1{
+    width: var(---main-width);
+    background-color: aqua;
+    margin: 2rem;
+}
+
+
+
+.div_image_assunto{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0px;
+}
+
+.image_assunto{
+    display: flex;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 900px) {
+    .coluna1{
+        width: 100%;
+        margin: 0rem;
+    }
+    .coluna2{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .melqui_logo{
+        width: 200PX;
+    }
+    .sub_cabecalho{
+        display: none;
+    }
+    .materia{
+        width: 100%;
+        margin: 5px;
+    }
+    .coluna1{
+        gap: 1rem;
+    }
+    .div_image_assunto{
+        margin: 5px 0px;
+    }
+
+}
+@media screen and (max-width: 450px) {
+    .melqui_logo{
+        width: 50%;
+    }
+    .sub_cabecalho{
+        display: none;
+    }
+    .icones{
+        width: 20px
+    }
+    .principal{
+        margin: 10px;
+    }
+    .cabecalho{
+        margin: 1rem 1rem;
+    }
+    :root{
+        ---titulo-h2: 10px;
+        --fonte-p: 12px;
+        ---titulo-temas: 20px;
+    }
+    .redes{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    }
+
+    .redes div{
+        width: 40px;
+    }
+
+}

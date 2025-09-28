@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelquiTech</title>
+    <link rel="shortcut icon" type="imagex/png" href="../image/mt.png">
+    <link rel="stylesheet" type="text/css" href="../css.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./lin.css" media="screen" />
+</head>
+<body class="fundo">
+
+        <header>
+            <div class="cabecalho">
+                <nav class="menu">
+                    <img onclick="menu()" class="icones" src="../image/iconsx.png" alt="">
+                    <a class="menu_div linksHeader"  href="../sobre/index.html">SOBRE MIM</a>
+                    <a class="menu_div linksHeader"  href="../lin/index.html">LINKS</a>
+                    <a class="menu_div linksHeader" target="_blank"   href="https://www.youtube.com/@MelquiTech">CANAL</a>
+                </nav>
+                <img class="icones" onclick="menu()" src="../image/icons8-cardápio-50.png" alt="">
+                <a class="melqui_logo" href="../index.html"><img src="../image/melquitech.png"></a>
+                <a onclick="theme_mode()" id="theme"></a>
+            </div>
+        </header>
+        <div class="sub_cabecalho">
+            <a class="temas" href="../sobre/index.html">SOBRE MIM</a>
+            <a class="temas" href="../lin/index.html">LINKS</a>
+            <a target="_blank" class="temas" href="https://www.youtube.com/@MelquiTech">CANAL</a>
+        </div>
+
+
+        <div class="conteudo">
+            <section>
+                <div class="principal">
+                    
+                    <div class="coluna1">  
+
+                        <div class="bloco lin">
+
+                            <a target="_blank" href="https://www.youtube.com/@MelquiTech" style="background-color: rgb(255, 0, 0);" class="li"><div class="icone"><img style="width: 100%;" src="../image/youtube.png" alt=""></div>YOUTUBE</a>
+                            
+                            <a target="_blank" href="https://www.facebook.com/MelquiTech/"  style="background-color: blue;" class="li"><div class="icone"><img style="width: 100%;" src="../image/facebook.png" alt=""></div>FACEBOOK</a>
+
+                            <a target="_blank" href="https://www.instagram.com/melquitech/"  style="background-color: rgb(255, 0, 212);" class="li"><div class="icone"><img style="width: 100%;" src="../image/instagram.png" alt=""></div>INSTAGRAM</a>
+
+                            <a target="_blank" href="https://www.tiktok.com/@melquitech"  style="background-color: rgb(65, 65, 65);" class="li"><div class="icone"><img style="width: 100%;" src="../image/tiktok.png" alt=""></div>TIKTOK</a>
+
+                            <a target="_blank" href="https://www.linkedin.com/in/melquizedeque-souza-santos-a665b8223/"  style="background-color: rgb(81, 81, 247);" class="li"><div class="icone"><img style="width: 100%;" src="../image/linkedin.png" alt=""></div>LINKEDIN</a>
+                            
+                        </div>
+                        
+                    
+                    </div>  
+                        
+
+
+                    <div class="coluna2">
+                        <div class="conteudoColuna2">
+                            <h1 class="tituloTemas">Veja também</h1>
+                            <div class="maisLidas">
+                                <a target="_blank" href="https://www.youtube.com/@MelquiTech"><img class="oi"  src="../image/canal.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+   
+            </section>
+
+
+            <footer>
+                
+            </footer>
+
+
+        </div>
+
+        
+
+
+
+
+
+    <script src="../js.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.documentElement.setAttribute("theme", localStorage.getItem("themeMode") || "ligth");
+            if (localStorage.getItem("themeMode") == "ligth"){
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/dark.png' alt=''>";
+            }
+            else{
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/ligth.png' alt=''>";
+            }
+        });
+
+        document.documentElement.setAttribute("theme", localStorage.getItem("themeMode") || "ligth")
+
+        function theme_mode(){
+
+            let theTheme = localStorage.getItem("themeMode") || "ligth"
+            
+            if(theTheme == "ligth"){
+                localStorage.setItem('themeMode', 'dark');
+                document.documentElement.setAttribute("theme", localStorage.getItem("themeMode"))
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/ligth.png' alt=''>";
+            }
+            else{
+                localStorage.setItem('themeMode', 'ligth');
+                document.documentElement.setAttribute("theme", localStorage.getItem("themeMode"))
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/dark.png' alt=''>";
+            }
+        }
+
+    </script>
+</body>
+</html>

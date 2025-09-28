@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelquiTech</title>
+    <link rel="shortcut icon" type="imagex/png" href="../image/mt.png">
+    <link rel="stylesheet" type="text/css" href="../css.css" media="screen" />
+</head>
+<body class="fundo">
+
+        <header>
+            <div class="cabecalho">
+                <nav class="menu">
+                    <img onclick="menu()" class="icones" src="../image/iconsx.png" alt="">
+                    <a class="menu_div linksHeader"  href="../sobre/index.html">SOBRE MIM</a>
+                    <a class="menu_div linksHeader"  href="../lin/index.html">LINKS</a>
+                    <a class="menu_div linksHeader" target="_blank"   href="https://www.youtube.com/@MelquiTech">CANAL</a>
+                </nav>
+                <img class="icones" onclick="menu()" src="../image/icons8-cardápio-50.png" alt="">
+                <a class="melqui_logo" href="../index.html"><img src="../image/melquitech.png"></a>
+                <a onclick="theme_mode()" id="theme"></a>
+            </div>
+        </header>
+        <div class="sub_cabecalho">
+            <a class="temas" href="./sobre/index.html">SOBRE MIM</a>
+            <a class="temas" href="../lin/index.html">LINKS</a>
+            <a target="_blank"  class="temas" href="https://www.youtube.com/@MelquiTech">CANAL</a>
+        </div>
+
+        <div class="conteudo">
+            <section>
+                <div class="principal">
+                    <div class="coluna1">
+
+                    <div class="bloco">
+
+                        <h1 style="margin-bottom: 2rem;" class="tituloTemas">MÉTODO PARA IDENTIFICAR FAKE NEWS</h1>
+
+                        <div class="assunto texto">
+                            <p>As Fake News são notícias falsas que são publicadas e compartilhadas por meios de comunicação principalmente em redes sociais, como se fossem informações reais, essas informações, geralmente são feitas e divulgadas com o objetivo de apoiar um ponto de vista ou prejudicar uma pessoa ou grupo que em sua maior parte das vezes são (figuras públicas).</p>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column;" class="div_image_assunto">
+                            <img class="image_assunto" src="../image/imagemfn.png">
+                            <p class="imgdes" style="text-align: center;">Imagem gerada por IA</p>
+                        </div>
+
+                        <div class="assunto texto">
+                            <p>Nos últimos anos o número de Fake News tem crescido drasticamente, gerando confusões, injustiças levando até mesmo a morte de inocentes como por exemplo no caso da dona de casa de 33 anos Fabiane Maria de Jesus, que foi uma mulher linchada por moradores na periferia do município de Guarujá, no litoral do estado São Paulo, em 3 de maio de 2014.</p>
+                            <p>
+                            Por conta de um boato que circulava nas mídias sociais, em que acusava a dona de casa de sequestrar crianças para rituais de magia.
+                            As Fake News também se mostraram fortemente presente no meio político
+                            </p>
+                            <p>
+                            As Fake News também se mostraram fortemente presente no meio político como oque aconteceu durante as eleições presidenciais de 2016 no Estados Unidos, Fato semelhante ocorreu também em 2018 no Brasil.<br>As pesquisas sobre as fakes news teve a orientação do professor Sylvio Barbon Júnior, do Departamento de Ciência da Computação e também assessor da ATI/UEL, A pesquisa não foca na estrutura de disseminação da fake news, mas sim no seu conteúdo.
+                            </p>
+
+                            <p>
+                            Os pesquisadores desenvolveram um tipo de algoritmo, com um sistema de detecção para atuar de forma automatizada. Para identificar as fakes news, o método de inteligência computacional lê a notícia e extrai 21 características. Com essa informação, a etapa seguinte é verificar as características em três tipos: falso, legitimo ou até mesmo irônico - chegando à análise final.
+                            </p>
+
+                            <p>
+                            O algoritmo faz a análise dessas 21 características que são baseadas em informações textuais, como por exemplo frequência de palavras fora de um domínio comum, como o da Política, a diversidade de classes gramaticais; frequência de personalidades reconhecidas, como o ex-presidente Obama e frequência de aspas no texto.<br>
+                            Sem dúvidas um dos maiores meios da propagação das fake news são através do famoso aplicativo de comunicação móvel, WhatsApp além das outras mídias sociais,
+                            </p>
+
+                            <p>
+                                Pensando em combater esse problema foi criado o aplicativo, Eu Fiscalizo.
+                                O Eu Fiscalizo possibilita que usuários notifiquem conteúdos impróprios em veículos de comunicação, mídias sociais e WhatsApp.
+                                A ideia é que os usuários possam denunciar notícias suspeitas ou até mesmo conteúdos inapropriados, dessa com ajuda forma teremos uma queda significativa nas propagações das notícias falsas.
+                                O aplicativo também é capaz de informar as datas das notificações e permite o envio de foto, vídeos e mensagens de texto, como sugestões, elogios e reclamações. 
+                                O aplicativo já está disponível para download em dispositivos Android na Play store e para dispositivos IOS na App Store. (Ensp/Fiocruz,2020)
+                            </p>
+
+                        </div>
+
+                    
+                    </div>
+                    <a href="/sobre/index.html"><p> Por: Melquizedeque; 2021</p></a> 
+                        
+
+                    </div>  
+                        
+
+
+                    <div class="coluna2">
+                        <div class="conteudoColuna2">
+                            <h1 class="tituloTemas">Veja também</h1>
+                            <div class="maisLidas">
+                                <a target="_blank" href="https://www.youtube.com/@MelquiTech"><img class="oi"  src="../image/canal.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+            </section>
+
+            <section>
+                <div class="materia1"></div>
+            </section>
+
+            <footer>
+                
+            </footer>
+
+
+        </div>
+
+        
+
+
+
+
+
+    <script src="../js.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.documentElement.setAttribute("theme", localStorage.getItem("themeMode") || "ligth");
+            if (localStorage.getItem("themeMode") == "ligth"){
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/dark.png' alt=''>";
+            }
+            else{
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/ligth.png' alt=''>";
+            }
+        });
+
+        document.documentElement.setAttribute("theme", localStorage.getItem("themeMode") || "ligth")
+
+        function theme_mode(){
+
+            let theTheme = localStorage.getItem("themeMode") || "ligth"
+            
+            if(theTheme == "ligth"){
+                localStorage.setItem('themeMode', 'dark');
+                document.documentElement.setAttribute("theme", localStorage.getItem("themeMode"))
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/ligth.png' alt=''>";
+            }
+            else{
+                localStorage.setItem('themeMode', 'ligth');
+                document.documentElement.setAttribute("theme", localStorage.getItem("themeMode"))
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/dark.png' alt=''>";
+            }
+        }
+
+    </script>
+</body>
+</html>

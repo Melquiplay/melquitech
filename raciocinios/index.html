@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelquiTech</title>
+    <link rel="shortcut icon" type="imagex/png" href="../image/mt.png">
+    <link rel="stylesheet" type="text/css" href="../css.css" media="screen" />
+</head>
+<body class="fundo">
+
+        <header>
+            <div class="cabecalho">
+                <nav class="menu">
+                    <img onclick="menu()" class="icones" src="./image/iconsx.png" alt="">
+                    <a class="menu_div linksHeader"  href="./sobre/index.html">SOBRE MIM</a>
+                    <a class="menu_div linksHeader"  href="../lin/index.html">LINKS</a>
+                    <a class="menu_div linksHeader" target="_blank"   href="https://www.youtube.com/@MelquiTech">CANAL</a>
+                </nav>
+                <img class="icones" onclick="menu()" src="../image/icons8-cardápio-50.png" alt="">
+                <a class="melqui_logo" href="../index.html"><img src="../image/melquitech.png"></a>
+                <a onclick="theme_mode()" id="theme"></a>
+            </div>
+        </header>
+        <div class="sub_cabecalho">
+            <a class="temas" href="./sobre/index.html">SOBRE MIM</a>
+            <a class="temas" href="../lin/index.html">LINKS</a>
+            <a target="_blank"  class="temas" href="https://www.youtube.com/@MelquiTech">CANAL</a>
+        </div>
+
+        <div class="conteudo">
+            <section>
+                <div class="principal">
+                    <div class="coluna1">
+
+                    <div class="bloco">
+
+                        <h1 style="margin-bottom: 2rem;" class="tituloTemas">LÓGICA INDUTIVA E LÓGICA DEDUTIVA</h1>
+
+                        <div style="display: flex; flex-direction: column;" class="div_image_assunto">
+                            <img class="image_assunto" src="../image/logica.png">
+                            <p class="imgdes" style="text-align: center;">Imagem gerada por IA</p>
+                        </div>
+
+
+                        <div class="assunto texto">
+
+                            <p>Na Lógica existem dois modos de raciocínios muito comum, a Lógica Dedutiva e a Lógica Indutiva.</p>
+                            <p><b>Raciocínio Dedutivo:</b></p>
+                            <p>O Raciocínio Dedutivo é quando se usa premissas para implicar uma conclusão logicamente correta baseada em um raciocínio necessário, sendo assim, as palavras que mais veremos associadas aos argumentos dedutivos são, certamente, absolutamente, definitivamente ou qualquer outra palavra que gere certeza.</p>
+                            <p><b>Exemplos:</b></p>
+                           
+                            <ul>
+                                <li>Se todo homem é mortal, e se Pedro é homem, então Pedro é mortal.</li>
+                                <li>Se eu tenho duas maças, e eu comprar mais duas maçãs, então terei quatro maçãs.</li>
+                                <li>Todos que nascem na Bahia são baianos, Paulo nasceu na Bahia, então Paulo é baiano.</li>
+                                <li>Caso chova, haverá nuvens no céu / o céu está limpo, sem nuvens / não está chovendo.</li>
+                                <li>Animais vertebrados são aqueles que possuem vértebras / todos os gatos possuem vértebras / logo, todos os gatos são animais vertebrados.</li>
+                            </ul>
+
+                            <p><b>Raciocínio Indutivo:</b></p>
+                            <p>O Raciocínio Indutivo é quando se usa premissas para apoiar uma conclusão, mas sem ter uma absoluta certeza que o argumento está correto. Na lógica a Indução trabalha com probabilidade, sendo assim, as palavras que mais veremos associadas aos argumentos Indutivos são, possível, improvável, plausível ou qualquer outra palavra que gere incerteza.</p>
+
+                            <p><b>Exemplos:</b></p>
+                           
+                            <ul>
+                                <li>Dentro da piscina tem água, meu celular não é à prova d’água, logo se meu celular cair dentro piscina ele pode estragar.  </li>
+                                <li>A maioria dos brasileiros gostam de futebol, Gabriel é brasileiro, Logo, Gabriel gosta de futebol.</li>
+                                <li>A maioria dos smartphones atuais gravam vídeos em 4k, Lucas comprara um novo smartphone amanhã, logo, o novo smartphone de Lucas gravara vídeos em 4k.</li>
+                                <li>O ferro é metal e conduz eletricidade / o ouro é metal e conduz eletricidade / o cobre é metal e conduz eletricidade / logo, os metais conduzem eletricidade</li>
+                            </ul>
+                            <p>
+                               Ou seja, se a conclusão do argumento passa uma certeza absoluta entre o correto e incorreto, sabemos que se trata de uma lógica Dedutiva pois nesse caso é impossível a conclusão ser falsa se as premissas forem verdadeiras. 
+                            </p>
+                            <p>
+                                Mas se a conclusão gera uma dúvida e não passa um motivo forte para acreditar no raciocínio, se trata de uma conclusão indutiva, pois na indução não precisamos ter premissas realmente verdadeiras, mas sim apenas “imaginar”, já que neste caso não é impossível, mas sim improvável a conclusão ser falsa se as premissas forem verdadeiras.
+                            </p>
+
+                        </div>
+
+                        
+
+                    
+                    </div>
+                    <a href="/sobre/index.html"><p> Por: Melquizedeque; 2021</p></a> 
+                    </div>  
+                        
+
+
+                    <div class="coluna2">
+                        <div class="conteudoColuna2">
+                            <h1 class="tituloTemas">Veja também</h1>
+                            <div class="maisLidas">
+                                <a target="_blank" href="https://www.youtube.com/@MelquiTech"><img class="oi"  src="../image/canal.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+            </section>
+
+            <section>
+                <div class="materia1"></div>
+            </section>
+
+            <footer>
+                
+            </footer>
+
+
+        </div>
+
+        
+
+
+
+
+
+    <script src="../js.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.documentElement.setAttribute("theme", localStorage.getItem("themeMode") || "ligth");
+            if (localStorage.getItem("themeMode") == "ligth"){
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/dark.png' alt=''>";
+            }
+            else{
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/ligth.png' alt=''>";
+            }
+        });
+
+        document.documentElement.setAttribute("theme", localStorage.getItem("themeMode") || "ligth")
+
+        function theme_mode(){
+
+            let theTheme = localStorage.getItem("themeMode") || "ligth"
+            
+            if(theTheme == "ligth"){
+                localStorage.setItem('themeMode', 'dark');
+                document.documentElement.setAttribute("theme", localStorage.getItem("themeMode"))
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/ligth.png' alt=''>";
+            }
+            else{
+                localStorage.setItem('themeMode', 'ligth');
+                document.documentElement.setAttribute("theme", localStorage.getItem("themeMode"))
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/dark.png' alt=''>";
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+:root{
+    --texto: rgb(0, 0, 0);
+}
+
+[theme="dark"]{
+    --texto: rgb(255, 255, 255);
+}
+
+
+
+.sobre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sobreTexto{
+    display: grid;
+    width: 60%;
+    gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    font-size: 30px;
+    color: var(--texto);
+}
+.sobreTexto p{
+    font-size: 20px;
+    color: var(--texto);
+    text-indent: 2rem;
+}
+
+.img{
+    width: 35%;
+}
+.img img{
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .sobre{
+        flex-direction: column-reverse;
+        gap: 1rem;
+        }
+    .img{
+       width: 200px;
+    }
+    .sobreTexto{
+        width: 90%;
+    }
+       .sobreTexto  h3{
+    text-align: center;
+    }
+    .sobreTexto p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .sobre{
+        flex-direction: column-reverse;
+        gap: 1rem;
+        }
+    .img{
+       width: 150px;
+    }
+    .sobreTexto p{
+    font-size: 15px;
+}
+}

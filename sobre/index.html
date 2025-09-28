@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="shortcut icon" type="imagex/png" href="../image/mt.png">
+    <link rel="stylesheet" type="text/css" href="../css.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./sobre.css" media="screen" />
+</head>
+<body class="fundo">
+
+        <header>
+            <div class="cabecalho">
+                <nav class="menu">
+                    <img onclick="menu()" class="icones" src="../image/iconsx.png" alt="">
+                    <a class="menu_div linksHeader"  href="../sobre/index.html">SOBRE MIM</a>
+                    <a class="menu_div linksHeader"  href="../lin/index.html">LINKS</a>
+                    <a class="menu_div linksHeader" target="_blank"   href="https://www.youtube.com/@MelquiTech">CANAL</a>
+                </nav>
+                <img class="icones" onclick="menu()" src="../image/icons8-cardápio-50.png" alt="">
+                <a class="melqui_logo" href="../index.html"><img src="../image/melquitech.png"></a>
+                <a onclick="theme_mode()" id="theme"></a>
+            </div>
+        </header>
+        <div class="sub_cabecalho">
+            <a class="temas" href="index.html">SOBRE MIM</a>
+            <a class="temas" href="../lin/index.html">LINKS</a>
+            <a target="_blank"  class="temas" href="https://www.youtube.com/@MelquiTech">CANAL</a>
+        </div>
+
+        <div class="conteudo">
+            <section>
+                <div class="principal">
+                    <div class="sobre">
+
+                        <div class="sobreTexto">
+                            <h3>Sobre min</h3>
+                            <span>
+                                <p>Olá, me chamo Melquizedeque, natural da Bahia, Tecnólogo em análise e desenvolvimento de sistemas e Bacharel em Engenharia de Software pela Universidade Norte do Paraná (UNOPAR).</p>
+                                <p>
+                                Entusiasta da área de tecnologia com foco na área de desenvolvimento, em meu canal do YouTube, compartilho dicas para usuários de Android, Linux e Windows, além de alguns Unboxing e Gameplay.
+                                </p>
+                                <p>
+                                No TikTok, além de também compartilhar conteúdos de tecnologia, publico algumas animações simples em 3D, feitas através do software Blender, sendo um dos meus hobbies.
+                                </p>
+                            </span>
+                            <div class="redes">
+                                <div><a target="_blank" href="https://www.youtube.com/@MelquiTech"><img class="redeicon" src="../image/youtube.png" alt=""></a></div>
+                                <div><a target="_blank" href="https://www.instagram.com/melquitech/"><img class="redeicon" src="../image/instagram.png" alt=""></a></div>
+                                <div><a target="_blank" href="https://www.tiktok.com/@melquitech"><img class="redeicon" src="../image/tiktok.png"  alt=""></a></div>
+                                <div><a target="_blank" target="_blank" href="https://www.facebook.com/MelquiTech/"><img class="redeicon" src="../image/facebook.png" alt=""></a></div>
+                            </div>
+                        </div>
+
+                        <div class="img"><img src="./melqui.png" alt=""></div>
+                    </div>
+                </div>
+
+
+                
+            </section>
+
+            <section>
+                <div class="materia1"></div>
+            </section>
+
+            <footer>
+                
+            </footer>
+
+
+        </div>
+
+        
+
+
+
+
+
+    <script src="../js.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.documentElement.setAttribute("theme", localStorage.getItem("themeMode") || "ligth");
+            if (localStorage.getItem("themeMode") == "ligth"){
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/dark.png' alt=''>";
+            }
+            else{
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/ligth.png' alt=''>";
+            }
+        });
+
+        document.documentElement.setAttribute("theme", localStorage.getItem("themeMode") || "ligth")
+
+        function theme_mode(){
+
+            let theTheme = localStorage.getItem("themeMode") || "ligth"
+            
+            if(theTheme == "ligth"){
+                localStorage.setItem('themeMode', 'dark');
+                document.documentElement.setAttribute("theme", localStorage.getItem("themeMode"))
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/ligth.png' alt=''>";
+            }
+            else{
+                localStorage.setItem('themeMode', 'ligth');
+                document.documentElement.setAttribute("theme", localStorage.getItem("themeMode"))
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/dark.png' alt=''>";
+            }
+        }
+
+    </script>
+</body>
+</html>

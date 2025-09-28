@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelquiTech</title>
+    <link rel="shortcut icon" type="imagex/png" href="../image/mt.png">
+    <link rel="stylesheet" type="text/css" href="../css.css" media="screen" />
+</head>
+<body class="fundo">
+
+        <header>
+            <div class="cabecalho">
+                <nav class="menu">
+                    <img onclick="menu()" class="icones" src="../image/iconsx.png" alt="">
+                    <a class="menu_div linksHeader"  href="../sobre/index.html">SOBRE MIM</a>
+                    <a class="menu_div linksHeader"  href="../lin/index.html">LINKS</a>
+                    <a class="menu_div linksHeader" target="_blank"   href="https://www.youtube.com/@MelquiTech">CANAL</a>
+                </nav>
+                <img class="icones" onclick="menu()" src="../image/icons8-cardápio-50.png" alt="">
+                <a class="melqui_logo" href="../index.html"><img src="../image/melquitech.png"></a>
+                <a onclick="theme_mode()" id="theme"></a>
+            </div>
+        </header>
+        <div class="sub_cabecalho">
+            <a class="temas" href="./sobre/index.html">SOBRE MIM</a>
+            <a class="temas" href="../lin/index.html">LINKS</a>
+            <a target="_blank"  class="temas" href="https://www.youtube.com/@MelquiTech">CANAL</a>
+        </div>
+
+        <div class="conteudo">
+            <section>
+                <div class="principal">
+                    <div class="coluna1">
+
+                    <div class="bloco">
+
+                        <h1 style="margin-bottom: 2rem;" class="tituloTemas">MODELOS BANCO DE DADOS</h1>
+
+                        <div style="display: flex; flex-direction: column;" class="div_image_assunto">
+                            <img class="image_assunto" src="../image/bancodedados.png">
+                            <p class="imgdes" style="text-align: center;">Imagem gerada por IA</p>
+                        </div>
+
+
+                        <div class="assunto texto">
+
+                            <p><b>Banco de dados relacionais (SQL)</b></p>
+                           
+                            <p>Os fundamentos de banco de dados relacionais (SQL), surgiram na empresa IBM entre as décadas de 1960 a 1970, utiliza como base tabelas compostas por linhas e colunas que podem se relacionar de forma muito parecida com uma tabela do Excel, onde cada banco pode ser considerado uma planilha, cada aba é como uma tabela e cada tabela possuindo linhas e colunas.</p>
+                            <p>
+                                Dessa forma, os componentes do banco se tornam um arquivo exclusivo, se relacionando por meio das colunas da tabela, consequentemente esse tipo de ligação gera integridade ao SGBD proporcionando mais consistência ao manusear os dados, que inclusive é uma das suas grandes vantagens, além de possuir bastante confiabilidade, esse tipo de modelo também é usado para rastrear inventários, processar transações de comércio eletrônico, gerenciar grandes quantidades de informações essenciais sobre o cliente, entre outros.
+                            </p>
+                            <p>O banco de dados relacionais costuma ser utilizado para reduzir as anomalias e para proteger o seu banco de perda de integridade. <br> Alguns dos principais bancos de dados relacionais utilizados atualmente são:</p>
+                            <ul>
+                                <li>Microsoft Acces</li>
+                                <li>MySQL</li>
+                                <li>PostgreSQL</li>
+                                <li>SQLServer</li>
+                            </ul>
+                            <p>Por outro lado, esse modelo de banco de dados possui algumas desvantagens quando se trata de escalabilidade e flexibilidade.</p>
+
+
+                            <p><b>Banco de dados não relacional (NoSQL)</b></p>
+                           <p>Já o banco de dados não relacional (NoSQL), surgiu como uma alternativa a ocasiões onde seja necessário o armazenamento de uma grande quantidade de dados não estruturado.</p>
+                           <p>O termo NoSQL foi utilizado em 1998 como o nome de um banco de dados não relacional de código aberto, criado por Carlo Strozzi. <br> Alguns de seus benefícios são:</p>
+
+                            <ul>
+                                <li>Lidar com grandes volumes de dados em alta velocidade.</li>
+                                <li>Armazenar dados não estruturados, semiestruturados ou estruturados.</li>
+                                <li>Arquitetura de escalabilidade horizontal.</li>
+                                <li>O máximo aproveitamento da nuvem para oferecer tempo de inatividade zero.</li>
+                            </ul>
+
+                            <p>As quatro categorias de bancos de dados principais do NoSQL são: </p>
+
+                            <p><b>Baseada em documentos,</b> conhecido como banco de dados orientado a documentos, possibilita o armazenamento de milhões de documentos, cada documento possui um ou mais campos, que podem armazenar um conteúdo tipado com uma string, data, inteiro, array, entre outros.</p>
+                            <p>Uma de suas vantagens é a flexibilidade da modelagem, em que cada documento pode possuir campos diferente, como no caso de um super mercado por exemplo, em que podemos ter vários produtos com características diferentes.</p>
+                            <p>Os principais bancos de dados dessa categoria são:</p>
+                            <ul>
+                                <li>MongoDB</li>
+                                <li>CouchDB</li>
+                                <li>RavenDB</li>
+                                <li>Terrastore</li>
+                            </ul>
+
+                            <p><b>Baseada em grafos,</b> é comumente utilizado em cenários de redes sociais online, em que os nós representam as entidades e os laços as interconexões entre eles, possibilitando atravessar o grafo seguindo as relações. </p>
+                            <p>Podemos utilizar esta categoria para lidar com problemas relacionados a lista de controle de acesso e sistema de recomendações.</p>
+                            <p>Os principais bancos de dados dessa categoria são:</p>
+                            <ul>
+                                <li>Neo4j</li>
+                                <li>FlokDB</li>
+                                <li>GraphDB</li>
+                                <li>ArangoDB</li>
+                            </ul>
+
+                            <p><b>Comum Family Store,</b>também conhecido como banco de dados orientado a coluna, seus dados ficam organizados em grupos de colunas.</p>
+                            <p>Esse tipo de banco de dados foi desenvolvido para aumentar a escalabilidade horizontal com a utilização de clusters distribuído de hardware de baixo custo</p>
+                            <p>Os principais bancos de dados dessa categoria são:</p>
+                            <ul>
+                                <li>Hbase</li>
+                                <li>Cassandra</li>
+                                <li>Hypertable</li>
+                                <li>Accumulo</li>
+                            </ul>
+                            <p>Por fim, algumas características que podem nos ajudar a considerar o uso do banco de dados NoSQL, é Quando:</p>
+                             <ul>
+                                <li>Houver alto volume de dados em grande escala,</li>
+                                <li>Os dados forem dinâmicos e frequentemente alterados,</li>
+                                <li>For necessário gravação rápida, e a segurança da gravação não for critica.</li>
+                                <li>As cargas de trabalho não exigirem garantias de ACID.</li>
+                                <li>Os dados exigirem uma ampla distribuição geográfica.</li>
+                            </ul>
+                            <p>E podemos considerar o uso do banco de dados relacional quando:</p>
+                             <ul>
+                                <li>Garantia de ACID for necessária.</li>
+                                <li>Os dados forem previsíveis e altamente estruturados</li>
+                                <li>Os usuários forem mais centralizados.</li>
+                                <li>A segurança de gravação for um requisito.</li>
+                                <li>O volume de dados for consistente.</li>
+                            </ul>
+                            <p>E então analisamos em que tipo de banco de dados o nosso sistema mais se encaixa <br> Resumindo, algumas das diferenças entre o bando de dados relacional e não relacionais são:</p>
+                            <p><b>No NoSQL</b> toda a informação é agrupada e guardada no mesmo registro. enquanto no SQL e necessário que haja relacionamento entre várias tabelas para ter a informação.</p>
+                            <p><b>O SQL</b> possui certa dificuldade quando se trata de escalabilidade. ao contrário do NoSQL,</p>
+                            <p>Uma das grandes vantagens do SQL é a consistência das informações</p>
+                            
+
+
+
+
+
+
+
+                        </div>
+                            
+
+                        
+
+                    
+                    </div>
+                    <a href="/sobre/index.html"><p> Por: Melquizedeque; 2021</p></a> 
+                    </div>  
+                        
+
+
+                    <div class="coluna2">
+                        <div class="conteudoColuna2">
+                            <h1 class="tituloTemas">Veja também</h1>
+                            <div class="maisLidas">
+                                <a target="_blank" href="https://www.youtube.com/@MelquiTech"><img class="oi"  src="../image/canal.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+            </section>
+
+            <section>
+                <div class="materia1"></div>
+            </section>
+
+            <footer>
+                
+            </footer>
+
+
+        </div>
+
+        
+
+
+
+
+
+    <script src="../js.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.documentElement.setAttribute("theme", localStorage.getItem("themeMode") || "ligth");
+            if (localStorage.getItem("themeMode") == "ligth"){
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/dark.png' alt=''>";
+            }
+            else{
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/ligth.png' alt=''>";
+            }
+        });
+
+        document.documentElement.setAttribute("theme", localStorage.getItem("themeMode") || "ligth")
+
+        function theme_mode(){
+
+            let theTheme = localStorage.getItem("themeMode") || "ligth"
+            
+            if(theTheme == "ligth"){
+                localStorage.setItem('themeMode', 'dark');
+                document.documentElement.setAttribute("theme", localStorage.getItem("themeMode"))
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/ligth.png' alt=''>";
+            }
+            else{
+                localStorage.setItem('themeMode', 'ligth');
+                document.documentElement.setAttribute("theme", localStorage.getItem("themeMode"))
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/dark.png' alt=''>";
+            }
+        }
+
+    </script>
+</body>
+</html>

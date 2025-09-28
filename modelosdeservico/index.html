@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelquiTech</title>
+    <link rel="shortcut icon" type="imagex/png" href="../image/mt.png">
+    <link rel="stylesheet" type="text/css" href="../css.css" media="screen" />
+</head>
+<body class="fundo">
+
+        <header>
+            <div class="cabecalho">
+                <nav class="menu">
+                    <img onclick="menu()" class="icones" src="../image/iconsx.png" alt="">
+                    <a class="menu_div linksHeader"  href="../sobre/index.html">SOBRE MIM</a>
+                    <a class="menu_div linksHeader"  href="../lin/index.html">LINKS</a>
+                    <a class="menu_div linksHeader" target="_blank"   href="https://www.youtube.com/@MelquiTech">CANAL</a>
+                </nav>
+                <img class="icones" onclick="menu()" src="../image/icons8-cardápio-50.png" alt="">
+                <a class="melqui_logo" href="../index.html"><img src="../image/melquitech.png"></a>
+                <a onclick="theme_mode()" id="theme"></a>
+            </div>
+        </header>
+        <div class="sub_cabecalho">
+            <a class="temas" href="./sobre/index.html">SOBRE MIM</a>
+            <a class="temas" href="../lin/index.html">LINKS</a>
+            <a target="_blank"  class="temas" href="https://www.youtube.com/@MelquiTech">CANAL</a>
+        </div>
+
+        <div class="conteudo">
+            <section>
+                <div class="principal">
+                    <div class="coluna1">
+
+                    <div class="bloco">
+
+                        <h1 style="margin-bottom: 2rem;" class="tituloTemas">Modelos de serviço</h1>
+
+                        <div style="display: flex; flex-direction: column;" class="div_image_assunto">
+                            <img class="image_assunto" src="../image/servidorimagem.png">
+                            <p class="imgdes" style="text-align: center;">Imagem gerada por IA</p>
+                        </div>
+
+
+                        <div class="assunto texto">
+
+                            <p>Vamos supor que você vai iniciar uma jornada empreendedora. Junto com alguns sócios, decidiu criar um negócio a partir da ideia de uma aplicação inovadora. Esta aplicação precisa de um ambiente de TI com recursos computacionais de alto desempenho e ambiente de nuvem devido à redução de cursos e abstração da complexidade da infraestrutura. <br> O próximo passo é determinar qual dos modelos de serviço é mais apropriado para este caso: SaaS, PaaS ou IaaS. Descreve analisando caso a caso.</p>
+                           
+                            <p><b>SaaS:</b></p>
+                            <p>No modelo SaaS, é fornecido um software como serviço, o cliente não tem controle sobre a infraestrutura da aplicação, podendo apenas acessar o software disponibilizado em nuvem tendo acesso somente a configurações básicas de preferência e customização.</p>
+                            <p>Este é um modelo muito utilizado por usuários comuns, pois é o tipo de serviço presente em aplicações como o Google Docs, Microsoft Office 365, Netflix, entre outros.</p>
+                            <p>No caso da Netflix, por exemplo, o cliente pode realizar o download do aplicativo que é bem leve, ou acessar pelo website, e ter acesso a vários filmes é series pagando um plano mensal, sem precisar se preocupar com o armazenamento em seu computador pessoal, outro exemplo comum é o Google Drive, plataforma muito utilizada para armazenamento de arquivos em nuvem</p>
+                            <p>Este modelo tem várias vantagens como, por exemplo, não ocupar muito armazenamento interno ou poder de processamento da máquina do cliente, dispensando os autos investimentos com infraestrutura e manutenção.</p>
+                            <p>Podemos considerar a falta de controle, e a ausência de uma plataforma de desenvolvimento como a principal desvantagens do modelo SaaS para a nossa aplicação, pois precisamos de um modelo de serviço que nos dê controle para o desenvolvimento e hospedagem da aplicação em nuvem.</p>
+
+                            <p><b>PaaS:</b></p>
+                            <p>No modelo PaaS, é fornecido uma plataforma como serviço, o usuário possui acesso a um ambiente de desenvolvimento em nuvem já configurado em que é possível construir e fornecer aplicativos, o usuário terá uma plataforma completa para desenvolvimento, contando com sistema operacional, servidores de aplicação, compiladores, entre outros. Os principais provedores do mercado oferecem suporte a tecnologias como Java e Python.</p>
+                            <p>O usuário pode escolher apenas a plataforma de desenvolvimento como por exemplo, a linguagem de programação e o banco de dados.</p>
+                            <p>Por ser uma plataforma que possibilita o desenvolvimento e hospedagem de software, o modelo PaaS também ajuda a possibilitar o modelo SaaS, entregando software como serviço para usuários finais.</p>
+                            <p>Podemos classificar o custo e facilidade de implementação como seu principal benefício, pois como não é necessário autos investimentos em infraestrutura, o software pode ser disponibilizado por um valor mais acessível, em um tempo menor, os detalhes da infraestrutura ficam transparente ao cliente.</p>
+                            <p>Como desvantagem do modelo PaaS para a nossa aplicação, podemos considerar o pouco controle sobre a infraestrutura do software como um ponto negativo, os recursos do desenvolvimento ficarão a cargo do fornecedor do PaaS, isso pode ser uma vantagem se levarmos em consideração que não será necessário se preocupar com os componentes relacionados a infraestrutura do software, diminuindo a responsabilidade da equipe, sendo assim a equipe terá mais tempo para focar no desenvolvimento do produto, mas como nossa aplicação precisa de um ambiente com alto desempenho computacional, a ausência de controle sobre a infraestrutura da aplicação pode acabar afetando configurações mais avançadas necessária para um melhor desempenho da aplicação.</p>
+
+                            <p><b>IaaS:</b></p>
+                            <p>O modelo IaaS, Infraestrutura como serviço, é um pouco parecido com o PaaS, mas no IaaS temos controle também sobre os recursos computacionais, podendo acessá-los e configura-los.</p>
+                            <p>Nesse modelo podemos criar uma infraestrutura completa e personalizada de acordo com as nossas necessidades de processamento e armazenamento, além de poder determinar o sistema operacional, temos privilégios administrativos para configurar o ambiente, serviços de rede, entre outros.  </p>
+                        </div>
+                        <p><b>Conclusão:</b></p>
+                        <p>Após analisar os modelos de serviço SaaS, PaaS e IaaS, podemos considerar o modelo IaaS a melhor opção, devido a necessidade de um ambiente de TI com recursos computacionais de alto desempenho.</p>
+                        <p>Apesar do PaaS ser uma opção interessante, nele não temos controle sobre os recursos computacionais, o que pode acabar prejudicando a demanda de alto desempenho da nossa aplicação, sendo assim será escolhido o modelo IaaS, que atende este requisito com um ambiente em nuvem. </p>    
+                    </div>
+                    <a href="/sobre/index.html"><p> Por: Melquizedeque; 2022</p></a> 
+                    </div>  
+                        
+
+
+                    <div class="coluna2">
+                        <div class="conteudoColuna2">
+                            <h1 class="tituloTemas">Veja também</h1>
+                            <div class="maisLidas">
+                                <a target="_blank" href="https://www.youtube.com/@MelquiTech"><img class="oi"  src="../image/canal.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+            </section>
+
+            <section>
+                <div class="materia1"></div>
+            </section>
+
+            <footer>
+                
+            </footer>
+
+
+        </div>
+
+        
+
+
+
+
+
+    <script src="../js.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.documentElement.setAttribute("theme", localStorage.getItem("themeMode") || "ligth");
+            if (localStorage.getItem("themeMode") == "ligth"){
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/dark.png' alt=''>";
+            }
+            else{
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/ligth.png' alt=''>";
+            }
+        });
+
+        document.documentElement.setAttribute("theme", localStorage.getItem("themeMode") || "ligth")
+
+        function theme_mode(){
+
+            let theTheme = localStorage.getItem("themeMode") || "ligth"
+            
+            if(theTheme == "ligth"){
+                localStorage.setItem('themeMode', 'dark');
+                document.documentElement.setAttribute("theme", localStorage.getItem("themeMode"))
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/ligth.png' alt=''>";
+            }
+            else{
+                localStorage.setItem('themeMode', 'ligth');
+                document.documentElement.setAttribute("theme", localStorage.getItem("themeMode"))
+                document.querySelector("#theme").innerHTML = "<img class='icones' src='../image/dark.png' alt=''>";
+            }
+        }
+
+    </script>
+</body>
+</html>
